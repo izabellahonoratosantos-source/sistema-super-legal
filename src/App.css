@@ -1,0 +1,166 @@
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  color: #1e3a8a;
+}
+
+.app-header p {
+  margin: 0;
+  color: #475569;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 820px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+  font-size: 1.25rem;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #3b82f6;
+  border-color: #3b82f6;
+}
+
+button {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.erro {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.aviso {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  color: #92400e;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.lista-reservas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lista-reservas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.lista-reservas .info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lista-reservas .info strong {
+  color: #0f172a;
+}
+
+.lista-reservas .info span {
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.btn-cancelar {
+  background: #dc2626;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+}
+
+.btn-cancelar:hover {
+  background: #b91c1c;
+}
+
+.vazio {
+  color: #64748b;
+  text-align: center;
+  padding: 24px 0;
+}
