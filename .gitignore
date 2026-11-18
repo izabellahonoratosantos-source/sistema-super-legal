@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Cópia antiga do projeto (mantida localmente)
+/sistema-super-legal/

@@ -12,17 +12,85 @@
 .app-header h1 {
   margin: 0 0 8px;
   font-size: 2rem;
-  color: #1e3a8a;
+  color: #166534;
 }
 
 .app-header p {
   margin: 0;
-  color: #475569;
+  color: #3f6212;
+}
+
+.sessao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.usuario {
+  display: inline-block;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btn-sair {
+  background: #ffffff;
+  border: 1px solid #16a34a;
+  color: #15803d;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-sair:hover {
+  background: #dcfce7;
+  color: #14532d;
+}
+
+.etapas {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.etapa {
+  background: #ffffff;
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.etapa.ativa {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
+}
+
+.etapa.concluida {
+  background: #dcfce7;
 }
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: 1fr;
   gap: 24px;
   align-items: start;
 }
@@ -35,14 +103,15 @@ main {
 
 .card {
   background: #ffffff;
+  border: 1px solid #dcfce7;
   border-radius: 14px;
   padding: 24px;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 16px rgba(22, 101, 52, 0.08);
 }
 
 .card h2 {
   margin-top: 0;
-  color: #1e3a8a;
+  color: #166534;
   font-size: 1.25rem;
 }
 
@@ -58,25 +127,26 @@ main {
   gap: 6px;
   font-weight: 600;
   font-size: 0.9rem;
-  color: #334155;
+  color: #276749;
 }
 
 input,
 select {
   padding: 10px 12px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #bbf7d0;
   border-radius: 8px;
-  background: #f8fafc;
+  background: #ffffff;
+  color: #14532d;
 }
 
 input:focus,
 select:focus {
-  outline: 2px solid #3b82f6;
-  border-color: #3b82f6;
+  outline: 2px solid #22c55e;
+  border-color: #16a34a;
 }
 
 button {
-  background: #2563eb;
+  background: #16a34a;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -87,18 +157,230 @@ button {
 }
 
 button:hover {
-  background: #1d4ed8;
+  background: #15803d;
 }
 
 button:disabled {
-  background: #94a3b8;
+  background: #86efac;
+  color: #14532d;
   cursor: not-allowed;
 }
 
+.calendario {
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 0;
+}
+
+.calendario legend {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #276749;
+  padding: 0 6px;
+}
+
+.calendario-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.calendario-nav span {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #166534;
+  text-transform: capitalize;
+}
+
+.calendario-nav button {
+  background: #ffffff;
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.calendario-nav button:hover:not(:disabled) {
+  background: #dcfce7;
+}
+
+.calendario-dias {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.calendario-dia {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: #f7fee7;
+  border: 1px solid #dcfce7;
+  color: #14532d;
+  border-radius: 8px;
+  padding: 6px 2px;
+  font-size: 0.85rem;
+}
+
+.calendario-dia small {
+  font-size: 0.65rem;
+  text-transform: capitalize;
+  color: #4d7c0f;
+}
+
+.calendario-dia:hover:not(:disabled) {
+  background: #dcfce7;
+}
+
+.calendario-dia.selecionado {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
+}
+
+.calendario-dia.selecionado small {
+  color: #dcfce7;
+}
+
+.calendario-dia.com-reserva:not(.selecionado) {
+  border-color: #16a34a;
+}
+
+.calendario-badge {
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #f59e0b;
+  color: #ffffff;
+  font-size: 0.62rem;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.calendario-rodape {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.calendario-hoje {
+  background: #ffffff;
+  border: 1px solid #16a34a;
+  color: #15803d;
+  padding: 6px 12px;
+  font-size: 0.78rem;
+}
+
+.calendario-hoje:hover {
+  background: #dcfce7;
+}
+
+.calendario-outra {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #276749;
+}
+
+.calendario-outra input {
+  padding: 6px 8px;
+  font-size: 0.78rem;
+}
+
+.aulas-fieldset {
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 0;
+}
+
+.aulas-fieldset legend {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #276749;
+  padding: 0 6px;
+}
+
+.aulas-dica {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  color: #4d7c0f;
+  font-weight: 400;
+}
+
+.aulas-opcoes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.aula-opcao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #dcfce7;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #f7fee7;
+  cursor: pointer;
+}
+
+.aula-opcao.selecionada {
+  border-color: #16a34a;
+  background: #dcfce7;
+}
+
+.aula-opcao.indisponivel {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.aula-opcao input {
+  accent-color: #16a34a;
+}
+
+.aula-opcao span {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.82rem;
+}
+
+.aula-opcao small {
+  color: #3f6212;
+  font-size: 0.72rem;
+  font-weight: 400;
+}
+
+.sucesso {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  color: #166534;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .erro {
-  background: #fee2e2;
-  border: 1px solid #fca5a5;
-  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
   border-radius: 8px;
   padding: 10px 12px;
   margin: 0;
@@ -106,13 +388,51 @@ button:disabled {
 }
 
 .aviso {
-  background: #fef3c7;
-  border: 1px solid #fcd34d;
-  color: #92400e;
+  background: #fefce8;
+  border: 1px solid #fde68a;
+  color: #854d0e;
   border-radius: 8px;
   padding: 10px 12px;
   margin: 0;
   font-size: 0.9rem;
+}
+
+.reservas-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.reservas-cabecalho h2 {
+  margin: 0;
+}
+
+.filtros-turno {
+  display: flex;
+  gap: 6px;
+}
+
+.filtros-turno button {
+  background: #ffffff;
+  border: 1px solid #bbf7d0;
+  color: #15803d;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.filtros-turno button:hover {
+  background: #dcfce7;
+}
+
+.filtros-turno button.ativo {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
 }
 
 .lista-reservas {
@@ -129,9 +449,10 @@ button:disabled {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dcfce7;
   border-radius: 10px;
   padding: 14px;
+  background: #f7fee7;
 }
 
 .lista-reservas .info {
@@ -140,27 +461,90 @@ button:disabled {
   gap: 4px;
 }
 
+.info-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .lista-reservas .info strong {
-  color: #0f172a;
+  color: #14532d;
+}
+
+.turno {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.turno-tarde {
+  background: #fef9c3;
+  color: #854d0e;
 }
 
 .lista-reservas .info span {
-  color: #475569;
+  color: #3f6212;
   font-size: 0.9rem;
 }
 
+.lista-reservas .reserva-turma {
+  margin-top: 4px;
+  color: #166534;
+  font-weight: 600;
+}
+
+.lista-reservas .reserva-responsavel {
+  color: #14532d;
+  font-weight: 600;
+}
+
 .btn-cancelar {
-  background: #dc2626;
+  background: #ffffff;
+  border: 1px solid #16a34a;
+  color: #15803d;
   padding: 8px 14px;
   font-size: 0.85rem;
 }
 
 .btn-cancelar:hover {
-  background: #b91c1c;
+  background: #dcfce7;
+  color: #14532d;
+}
+
+.form-acoes,
+.acoes-reserva {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-secundario,
+.btn-editar {
+  background: #ffffff;
+  border: 1px solid #16a34a;
+  color: #15803d;
+  font-size: 0.85rem;
+}
+
+.btn-secundario:hover,
+.btn-editar:hover {
+  background: #dcfce7;
+  color: #14532d;
+}
+
+.somente-leitura {
+  color: #4d7c0f;
+  font-size: 0.75rem;
+  max-width: 170px;
+  text-align: right;
 }
 
 .vazio {
-  color: #64748b;
+  color: #4d7c0f;
   text-align: center;
   padding: 24px 0;
 }
