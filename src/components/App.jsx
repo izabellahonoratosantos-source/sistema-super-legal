@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Login, { CHAVE_SESSAO } from "./Login.jsx";
-import "./App.css";
+import "../styles/App.css";
 
 const LABORATORIOS = [
   { id: "lab1", nome: "Lab1" },

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Login.css";
+import "../styles/Login.css";
 
 export const CHAVE_SESSAO = "agendamento-lab-sessao";
 

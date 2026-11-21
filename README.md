@@ -1,27 +1,49 @@
-# sistema-super-legal
+# Sistema Super Legal — Agendamentos CEPK
 
-Sistema de Agendamentos CEPK para escola.
+Sistema web de agendamento de laboratórios para a escola, com login de professores, calendário semanal, controle de conflitos de horário e visualização/edição das reservas.
 
 ## Funcionalidades
 
-- Fluxo em três telas: 1) login, 2) agendamento, 3) resultado dos agendamentos
-
-- Cadastro de reservas de laboratório (avulsas)
-- Duração configurável em aulas (1 a 6 aulas, de 45 minutos cada)
-- Reservas nos turnos da manhã (07:20 às 12:35) e da tarde (13:00 às 18:15), com filtro por turno
-- Aulas de 50 minutos e recreio de 15 minutos após a 3ª aula
-- Turno da tarde: 6º ao 9º ano com 5 aulas (até 17:25); 1º ano técnico com 6 aulas (até 18:15)
-- Série e turma por turno: manhã (1º ao 3º ano do Ensino Médio) e tarde (6º ao 9º ano; 1º ano técnico em Desenvolvimento de Sistemas e Administração)
-- Identificação do professor e da matéria em cada reserva
-- Calendário semanal com navegação, atalho “Hoje” e indicador de dias já agendados
-- Edição e cancelamento restritos ao professor que criou a reserva
-- Um professor pode registrar quantas reservas quiser no mesmo dia
+- Login com nome, e-mail e CPF (validação de CPF no cliente)
+- Fluxo em três etapas: login → agendamento → resultado
+- Reservas de laboratório por data, turno e aulas
+- Turnos da manhã (07:20 às 12:35) e da tarde (13:00 às 18:15)
+- Aulas de 50 minutos, com recreio de 15 minutos após a 3ª aula
+- Seleção de turma, matéria e professor responsável
 - Bloqueio automático de conflitos de horário
+- Edição e cancelamento restritos ao professor que criou a reserva
+- Calendário semanal com atalho “Hoje” e indicador de dias com reservas
+- Persistência local via `localStorage` e sessão via `sessionStorage`
 
 ## Tecnologias
 
-- React
-- Vite
+- [React 19](https://react.dev/)
+- [Vite 8](https://vite.dev/)
+- CSS puro
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter.html)
+
+## Estrutura do projeto
+
+```
+sistema-super-legal/
+├─ public/
+│  └─ favicon.svg
+├─ src/
+│  ├─ components/
+│  │  ├─ App.jsx        # telas de agendamento e resultado
+│  │  └─ Login.jsx      # tela de login
+│  ├─ styles/
+│  │  ├─ index.css      # estilos globais
+│  │  ├─ App.css        # estilos do app
+│  │  └─ Login.css      # estilos da tela de login
+│  ├─ main.jsx          # ponto de entrada
+│  └─ ...
+├─ index.html
+├─ package.json
+├─ vite.config.js
+├─ render.yaml          # blueprint de deploy no Render
+└─ README.md
+```
 
 ## Como executar
 
@@ -29,3 +51,39 @@ Sistema de Agendamentos CEPK para escola.
 npm install
 npm run dev
 ```
+
+Abra o endereço exibido pelo Vite (normalmente `http://localhost:5173`).
+
+### Login de teste
+
+| Campo | Valor |
+|---|---|
+| Nome | Professora Maria Silva |
+| E-mail | teste@escola.com.br |
+| CPF | 529.982.247-25 |
+
+O botão **Preencher** na tela de login preenche esses dados automaticamente.
+
+## Scripts
+
+| Comando | Descrição |
+|---|---|
+| `npm run dev` | Inicia o servidor de desenvolvimento |
+| `npm run build` | Gera a versão de produção em `dist/` |
+| `npm run preview` | Pré-visualiza o build de produção |
+| `npm run lint` | Executa o Oxlint |
+
+## Deploy no Render
+
+O arquivo `render.yaml` já configura um **Static Site**:
+
+- **Build Command:** `npm ci && npm run build`
+- **Publish Directory:** `dist`
+- **Tipo:** estático (`env: static`)
+
+Para publicar:
+
+1. Acesse [render.com](https://render.com) e conecte o repositório.
+2. **New + → Static Site** (ou **Blueprint**, que lê o `render.yaml`).
+3. Confirme o build e o diretório de publicação.
+4. A página fica disponível em `https://<nome-do-servico>.onrender.com`.

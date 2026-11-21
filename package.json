@@ -1,8 +1,12 @@
 {
   "name": "sistema-super-legal",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Sistema de agendamento de laboratórios (CEPK) feito com React e Vite",
   "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
