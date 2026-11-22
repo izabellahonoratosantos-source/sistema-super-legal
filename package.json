@@ -2,22 +2,29 @@
   "name": "sistema-super-legal",
   "private": true,
   "version": "1.0.0",
-  "description": "Sistema de agendamento de laboratórios (CEPK) feito com React e Vite",
+  "description": "LabEscola — sistema de agendamento de laboratórios (CEPK) com React, Express, PostgreSQL e PWA",
   "type": "module",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
     "dev": "vite",
+    "dev:api": "node --watch server.js",
     "build": "vite build",
+    "start": "node server.js",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "icones": "node scripts/gerar-icones.mjs",
+    "test": "node --test tests/*.test.js"
   },
   "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.13.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.3.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",

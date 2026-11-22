@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Banco local de desenvolvimento (PGlite)
+data/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -1,0 +1,52 @@
+{
+  "id": "/",
+  "name": "Agendamentos CEPK — LabEscola",
+  "short_name": "LabEscola",
+  "description": "Reserve laboratórios e o auditório da escola por data, turno e aula, com controle automático de conflitos.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#f0fdf4",
+  "theme_color": "#16a34a",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Novo agendamento",
+      "short_name": "Agendar",
+      "description": "Criar uma nova reserva de laboratório",
+      "url": "/?acao=novo",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Ver agendamentos",
+      "short_name": "Reservas",
+      "description": "Consultar as reservas cadastradas",
+      "url": "/?acao=lista",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}

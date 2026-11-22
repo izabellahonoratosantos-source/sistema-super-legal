@@ -1,7 +1,7 @@
 .app {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 32px 20px 64px;
+  padding: 32px 20px calc(64px + env(safe-area-inset-bottom, 0px));
 }
 
 .app-header {
@@ -58,6 +58,22 @@
 .btn-sair:hover {
   background: #dcfce7;
   color: #14532d;
+}
+
+.btn-instalar {
+  background: #16a34a;
+  border: 1px solid #16a34a;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-instalar:hover {
+  background: #15803d;
 }
 
 .etapas {
@@ -192,7 +208,6 @@ button:disabled {
   font-size: 0.82rem;
   font-weight: 700;
   color: #166534;
-  text-transform: capitalize;
 }
 
 .calendario-nav button {
@@ -338,6 +353,11 @@ button:disabled {
   padding: 8px 10px;
   background: #f7fee7;
   cursor: pointer;
+}
+
+/* `.form-grid label` empilha os campos; aqui o checkbox fica ao lado do texto. */
+.form-grid label.aula-opcao {
+  flex-direction: row;
 }
 
 .aula-opcao.selecionada {
@@ -547,4 +567,133 @@ button:disabled {
   color: #4d7c0f;
   text-align: center;
   padding: 24px 0;
+}
+
+.aviso.offline {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.app-rodape {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 18px;
+  font-size: 0.75rem;
+  color: #4d7c0f;
+  text-align: center;
+}
+
+/* ---------- Responsividade ---------- */
+
+@media (max-width: 640px) {
+  .app {
+    padding: 20px 14px calc(40px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .app-header {
+    margin-bottom: 24px;
+  }
+
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .app-header p {
+    font-size: 0.9rem;
+  }
+
+  .sessao {
+    gap: 8px;
+  }
+
+  .usuario {
+    max-width: 100%;
+  }
+
+  .etapas {
+    gap: 6px;
+  }
+
+  .etapa {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+  }
+
+  .card {
+    padding: 18px 16px;
+    border-radius: 12px;
+  }
+
+  .calendario-rodape {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .calendario-hoje,
+  .calendario-outra input {
+    width: 100%;
+  }
+
+  .aulas-opcoes {
+    grid-template-columns: 1fr;
+  }
+
+  .form-acoes button {
+    width: 100%;
+  }
+
+  .reservas-cabecalho {
+    align-items: flex-start;
+  }
+
+  .reservas-cabecalho h2 {
+    width: 100%;
+  }
+
+  .filtros-turno {
+    flex-wrap: wrap;
+  }
+
+  .lista-reservas li {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .acoes-reserva button {
+    flex: 1 1 auto;
+  }
+
+  .somente-leitura {
+    max-width: none;
+    text-align: left;
+  }
+
+  /* evita o zoom automático do iOS ao focar campos */
+  input,
+  select {
+    font-size: 16px;
+  }
+
+  .app-rodape {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .calendario-dias {
+    gap: 2px;
+  }
+
+  .calendario-dia {
+    font-size: 0.78rem;
+    padding: 5px 1px;
+  }
+
+  .etapa {
+    font-size: 0.66rem;
+  }
 }
