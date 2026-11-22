@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-22T00:28:55.004Z" agent="OpenCode" version="24.0.0" type="device">
+  <diagram id="diagrama" name="Sistema de Agendamento de Laboratórios">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="Início" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8bbd0;strokeColor=#c2185b;fontColor=#880e4f;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="18" width="180" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="Exibir tela de login" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;fontColor=#0d47a1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="Entrar com nome, e-mail e CPF" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;fontColor=#0d47a1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="210" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="Credenciais válidas?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff59d;strokeColor=#f9a825;fontColor=#795548;" vertex="1" parent="1">
+          <mxGeometry x="420" y="310" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="Exibir erro" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#c62828;fontColor=#b71c1c;" vertex="1" parent="1">
+          <mxGeometry x="760" y="335" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="Criar sessão" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontColor=#1b5e20;" vertex="1" parent="1">
+          <mxGeometry x="400" y="460" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="Menu principal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontColor=#4a148c;" vertex="1" parent="1">
+          <mxGeometry x="400" y="550" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="Qual opção?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff59d;strokeColor=#f9a825;fontColor=#795548;" vertex="1" parent="1">
+          <mxGeometry x="420" y="650" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="Encerrar sessão" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#c62828;fontColor=#b71c1c;" vertex="1" parent="1">
+          <mxGeometry x="400" y="820" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="Fim" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8bbd0;strokeColor=#c2185b;fontColor=#880e4f;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="910" width="180" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" value="Preencher formulário" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;fontColor=#0d47a1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="730" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" value="Conflito de horário?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff59d;strokeColor=#f9a825;fontColor=#795548;" vertex="1" parent="1">
+          <mxGeometry x="160" y="830" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" value="Avisar" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#c62828;fontColor=#b71c1c;" vertex="1" parent="1">
+          <mxGeometry x="0" y="845" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" value="Salvar reserva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontColor=#1b5e20;" vertex="1" parent="1">
+          <mxGeometry x="130" y="960" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" value="Mensagem de sucesso" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontColor=#1b5e20;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1050" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n16" value="Listar reservas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;fontColor=#0d47a1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="730" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" value="Filtrar por turno" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;fontColor=#0d47a1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="820" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" value="Selecionar reserva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;fontColor=#0d47a1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="910" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" value="É o dono?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff59d;strokeColor=#f9a825;fontColor=#795548;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1010" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" value="Somente leitura" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#c62828;fontColor=#b71c1c;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1025" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" value="Editar ou excluir" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontColor=#1b5e20;" vertex="1" parent="1">
+          <mxGeometry x="670" y="1140" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n1" target="n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n2" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n3" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="Não" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n4" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n5" target="n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="Sim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n4" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n7" target="n8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="Sair" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n8" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n9" target="n10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="Novo agendamento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n8" target="n11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n11" target="n12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="Sim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n12" target="n13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n13" target="n11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="Não" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n12" target="n14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n14" target="n15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n15" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="Ver reservas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n8" target="n16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n16" target="n17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n17" target="n18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n18" target="n19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" value="Não" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n19" target="n20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n20" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" value="Sim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n19" target="n21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n21" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
