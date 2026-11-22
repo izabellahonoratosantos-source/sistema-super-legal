@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-11-22T00:44:13.253Z" agent="OpenCode" version="24.0.0" type="device">
+<mxfile host="app.diagrams.net" modified="2026-11-22T00:47:19.345Z" agent="OpenCode" version="24.0.0" type="device">
   <diagram id="diagrama" name="Sistema de Agendamento de Laboratórios">
     <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1600" math="0" shadow="0">
       <root>
@@ -80,7 +80,7 @@
         <mxCell id="e3" value="Não" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n4" target="n5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n5" target="n2">
+        <mxCell id="e4" style="rounded=0;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n5" target="n2">
           <mxGeometry relative="1" as="geometry">
           <Array as="points">
             <mxPoint x="840" y="145" />
@@ -102,7 +102,7 @@
         <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n9" target="n10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e10" value="Novo agendamento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n8" target="n11">
+        <mxCell id="e10" value="Novo agendamento" style="rounded=0;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n8" target="n11">
           <mxGeometry relative="1" as="geometry">
           <Array as="points">
             <mxPoint x="230" y="700" />
@@ -115,7 +115,7 @@
         <mxCell id="e12" value="Sim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n12" target="n13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n13" target="n11">
+        <mxCell id="e13" style="rounded=0;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n13" target="n11">
           <mxGeometry relative="1" as="geometry">
           <Array as="points">
             <mxPoint x="30" y="755" />
@@ -128,7 +128,7 @@
         <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n14" target="n15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n15" target="n7">
+        <mxCell id="e16" style="rounded=0;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n15" target="n7">
           <mxGeometry relative="1" as="geometry">
           <Array as="points">
             <mxPoint x="230" y="1140" />
@@ -137,7 +137,7 @@
           </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e17" value="Ver reservas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n8" target="n16">
+        <mxCell id="e17" value="Ver reservas" style="rounded=0;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n8" target="n16">
           <mxGeometry relative="1" as="geometry">
           <Array as="points">
             <mxPoint x="770" y="700" />
@@ -156,7 +156,7 @@
         <mxCell id="e21" value="Não" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n19" target="n20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n20" target="n7">
+        <mxCell id="e22" style="rounded=0;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n20" target="n7">
           <mxGeometry relative="1" as="geometry">
           <Array as="points">
             <mxPoint x="970" y="575" />
@@ -166,7 +166,7 @@
         <mxCell id="e23" value="Sim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n19" target="n21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n21" target="n7">
+        <mxCell id="e24" style="rounded=0;html=1;strokeColor=#546e7a;fontColor=#c62828;" edge="1" parent="1" source="n21" target="n7">
           <mxGeometry relative="1" as="geometry">
           <Array as="points">
             <mxPoint x="770" y="1230" />
